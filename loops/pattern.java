@@ -61,20 +61,87 @@ public class pattern {
         // }
         // Note: Prints Floyd's triangle (consecutive numbers in a triangle).
 
-        // Pattern 6: 0-1 Triangle
-        int n = 5;
-        for(int i = 0; i <= n; i++){
-            for(int j = 1; j <= i; j++){
-                int sum = i + j;
-                if(sum % 2 == 0){
-                    System.out.print("1 ");
-                }else{
-                    System.out.print("0 ");
-                }
-            }
-            System.out.println();
-        }
+        // // Pattern 6: 0-1 Triangle
+        // int n = 5;
+        // for(int i = 0; i <= n; i++){
+        //     for(int j = 1; j <= i; j++){
+        //         int sum = i + j;
+        //         if(sum % 2 == 0){
+        //             System.out.print("1 ");
+        //         }else{
+        //             System.out.print("0 ");
+        //         }
+        //     }
+        //     System.out.println();
+        // }
         // Note: Prints a triangle of 0s and 1s, where the value depends on the sum of row and column indices.
+
+        //butterfly pattern
+
+    //     int n = 5;
+    //     //  upper half
+    //     for(int i=1; i<=n; i++){
+    //         //1st part
+    //         for(int j=1; j<=i; j++){
+    //             System.out.print("*");
+    //         }
+    //         //spaces
+    //         int spaces = 2*(n-i);
+    //         for(int j=1; j<=spaces; j++){
+    //             System.out.print(" ");
+    //         }
+    //         //2nd half part
+    //         for(int j=1; j<=i;j++){
+    //             System.out.print("*");
+    //         }
+    //         System.out.println( );
+    //     }
+
+    //     //low half
+    //    for(int i=n; i>=1; i--){
+    //     for(int j=1; j<=i; j++){
+    //         System.out.print("*");
+    //     }
+    //     //spaces
+    //     int spaces = 2*(n-i);
+    //     for(int j=1; j<=spaces; j++){
+    //         System.out.print(" ");
+    //     }
+    //     for(int j=1; j<=i;j++){
+    //         System.out.print("*");
+    //     }
+    //     System.out.println();
+    //    }
+
+
+    // int n =5;
+
+    // for(int i=1; i<=n; i++){
+    //     // spaces 
+    //     int spaces = n-i;
+    //     for(int j=1; j<=spaces; j++){
+    //         System.out.print(" ");
+    //     }
+    //     for(int j=1; j<=n; j++){
+    //         System.out.print("*");
+    //     }
+    //     System.out.println();
+    // }
+
+    // int n=5;
+    // for(int i=1; i<=n; i++){
+    //     //spaces
+    //     for(int j=1; j<=n-i;j++){
+    //         System.out.print(" ");
+    //     }
+    //     //number -> print row  no, row no times
+    //     for(int j=1; j<=i; j++){
+    //         System.out.print(i+ " ");
+    //     }
+    //     System.out.println();
+    // }
+    
+
 
     }
 }
