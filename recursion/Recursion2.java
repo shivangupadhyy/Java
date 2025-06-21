@@ -57,24 +57,42 @@ public class Recursion2 {
     //     }
     // }
 
-    public static  void moveAllX(String str, int idx, int count, String newString){
+    // public static  void moveAllX(String str, int idx, int count, String newString){
         
-        if(idx == str.length()){
-            for(int i =0; i<count; i++){
-            newString += "x";
-        }
+    //     if(idx == str.length()){
+    //         for(int i =0; i<count; i++){
+    //         newString += "x";
+    //     }
+    //         System.out.println(newString);
+    //         return;
+    //     }
+
+
+    //     char currChar = str.charAt(idx);
+    //     if(currChar == 'x'){
+    //         count++;
+    //         moveAllX(str, idx+1, count, newString);
+    //     }else{
+    //         newString += currChar;//newString = newString + currChar
+    //         moveAllX(str, idx+1, count, newString);
+    //     }
+    // }
+
+    public static  boolean[] map = new boolean[26];
+
+    public static void removeDuplicates(String str, int idx, String newString){
+
+        if(idx ==str.length()){
             System.out.println(newString);
             return;
         }
-
-
         char currChar = str.charAt(idx);
-        if(currChar == 'x'){
-            count++;
-            moveAllX(str, idx+1, count, newString);
+        if(map[currChar - 'a']){
+            removeDuplicates(str, idx+1, newString);
         }else{
-            newString += currChar;//newString = newString + currChar
-            moveAllX(str, idx+1, count, newString);
+            newString += currChar;
+            map[currChar - 'a'] = true;
+            removeDuplicates(str, idx+1, newString);
         }
     }
 
@@ -93,8 +111,11 @@ public class Recursion2 {
         // int arr[] = {1,3, 3};
         // System.out.println(isSorted(arr, 0));
 
-        String str = "axbcxxd";
-        moveAllX(str, 0, 0, "");
+        // String str = "axbcxxd";
+        // moveAllX(str, 0, 0, "");
+
+        String str = "abbccda";
+        removeDuplicates(str, 0, "");
         
     }
 }
