@@ -1,67 +1,97 @@
+// Package declaration
 package oops;
 
-interface MyCamera2{
+// ----------- INTERFACE: MyCamera2 ------------------
+
+interface MyCamera2 {
+    // Abstract methods (must be implemented by class)
     void takeSnap();
     void recordVideo();
 
-    private void greet(){
+    // Private method inside interface (Java 9+ feature)
+    // Not accessible outside the interface; used for code reuse in default methods
+    private void greet() {
         System.out.println("good morning");
     }
 
-    default void record4kVideo(){
-        greet();
+    // Default method: can be optionally overridden in implementing class
+    default void record4kVideo() {
+        greet(); // Calls private method inside the interface
         System.out.println("recording in 4k...");
     }
 }
 
-interface Mywifi{
+// ----------- INTERFACE: Mywifi ------------------
+
+interface Mywifi {
+    // Method to return available networks
     String[] getNetwork();
+
+    // Method to connect to a specific network
     void connectToNetwork(String network);
 }
 
-class MycellPhone{
-    void callNumber(int  PhoneNumber) {
-        System.out.println("calling.." +  PhoneNumber);
+// ----------- BASE CLASS: MycellPhone ------------------
+
+class MycellPhone {
+    void callNumber(int phoneNumber) {
+        System.out.println("calling.." + phoneNumber);
     }
 
-    void pickCalll(){
+    void pickCalll() {
         System.out.println("call picked connecting..");
     }
 }
 
-class MySmartPhone extends MycellPhone implements Mywifi, MyCamera2{
-    public void takeSnap(){
-        System.out.println("taking snapp");
-    }
-    public void recordVideo(){
-        System.out.println("rcoedeing video");
+// ----------- CHILD CLASS: MySmartPhone ------------------
+// Inherits MycellPhone and implements both interfaces: MyCamera2 & Mywifi
+
+class MySmartPhone extends MycellPhone implements Mywifi, MyCamera2 {
+
+    // Implementation of camera functionality
+    public void takeSnap() {
+        System.out.println("taking snap");
     }
 
-    // public void record4kVideo(){
-    //     System.out.println("taking snap and recording in 4k");
-    // }
+    public void recordVideo() {
+        System.out.println("recording video");
+    }
 
-    public String[] getNetwork(){
-        System.out.println("getting list og network");
-        String  [] networkList = {"harry", "prashnath", "anjali5g"};
+    // Optional: You can override default method record4kVideo() if needed
+
+    // Implementation of WiFi functionality
+    public String[] getNetwork() {
+        System.out.println("getting list of networks");
+        String[] networkList = {"harry", "prashnath", "anjali5g"};
         return networkList;
     }
 
-    public void connectToNetwork(String network){
-        System.out.println("connectting" + network);
+    public void connectToNetwork(String network) {
+        System.out.println("connecting to " + network);
     }
-
 }
+
+// ----------- MAIN CLASS: polymorphism ------------------
 
 public class polymorphism {
     public static void main(String[] args) {
-        MyCamera2 cam1 = new MySmartPhone();
-        // cam1.getNetwork(); ==> not allowed\this is an smartphone but, use it as a camera
-        cam1.record4kVideo();
 
+        // Creating reference of interface MyCamera2
+        // Polymorphism: Reference type is MyCamera2, object is MySmartPhone
+        MyCamera2 cam1 = new MySmartPhone();
+
+        // cam1.getNetwork(); ❌ Not allowed
+        // Reason: cam1 is of type MyCamera2, which doesn’t have getNetwork()
+
+        // Only MyCamera2 methods can be called using cam1
+        cam1.record4kVideo(); // Uses default method from interface
+
+        // Creating full object of MySmartPhone
         MySmartPhone s = new MySmartPhone();
-        s.recordVideo();
-        s.getNetwork();
-        s.callNumber(85);
+
+        // Full access to all methods from interfaces and base class
+        s.recordVideo();              // From MyCamera2
+        s.getNetwork();               // From Mywifi
+        s.callNumber(85);            // From MycellPhone
     }
 }
