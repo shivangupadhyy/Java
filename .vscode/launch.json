@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Throw_throws",
+            "request": "launch",
+            "mainClass": "Error_and_Exceptions.Throw_throws",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Exception_Class",
+            "request": "launch",
+            "mainClass": "Error_and_Exceptions.Exception_Class",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Nested_try_catch",
+            "request": "launch",
+            "mainClass": "Error_and_Exceptions.Nested_try_catch",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Exception_handling",
+            "request": "launch",
+            "mainClass": "Error_and_Exceptions.Exception_handling",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Try",
+            "request": "launch",
+            "mainClass": "Error_and_Exceptions.Try",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "Error",
             "request": "launch",
             "mainClass": "Error_and_Exceptions.Error",
