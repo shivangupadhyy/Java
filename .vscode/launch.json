@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Practice_set",
+            "request": "launch",
+            "mainClass": "Error_and_Exceptions.Practice_set",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "_finally",
+            "request": "launch",
+            "mainClass": "Error_and_Exceptions._finally",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "Throw_throws",
             "request": "launch",
             "mainClass": "Error_and_Exceptions.Throw_throws",
