@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "linkList",
+            "request": "launch",
+            "mainClass": "Advance_Java.linkList",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "arrayList",
+            "request": "launch",
+            "mainClass": "Advance_Java.arrayList",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "Practice_set",
             "request": "launch",
             "mainClass": "Error_and_Exceptions.Practice_set",
