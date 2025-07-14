@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Date_time",
+            "request": "launch",
+            "mainClass": "Advance_Java.Date_time",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "set",
+            "request": "launch",
+            "mainClass": "Advance_Java.set",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "_deQueue",
+            "request": "launch",
+            "mainClass": "Advance_Java._deQueue",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "linkList",
             "request": "launch",
             "mainClass": "Advance_Java.linkList",
