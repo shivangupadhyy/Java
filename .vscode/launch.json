@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "java_annotation",
+            "request": "launch",
+            "mainClass": "Advance_Java.java_annotation",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Excersise6",
+            "request": "launch",
+            "mainClass": "excersise.Excersise6",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Practice_set",
+            "request": "launch",
+            "mainClass": "Advance_Java.Practice_set",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "java_Time",
+            "request": "launch",
+            "mainClass": "Advance_Java.java_Time",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "Date_time",
             "request": "launch",
             "mainClass": "Advance_Java.Date_time",
