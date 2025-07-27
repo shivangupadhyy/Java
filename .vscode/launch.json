@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Day_1",
+            "request": "launch",
+            "mainClass": "collection_framework.Day_1",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "java_annotation",
             "request": "launch",
             "mainClass": "Advance_Java.java_annotation",
