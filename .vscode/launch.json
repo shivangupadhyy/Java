@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Vector_demo",
+            "request": "launch",
+            "mainClass": "collection_framework.Vector_demo",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Day_2",
+            "request": "launch",
+            "mainClass": "collection_framework.Day_2",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "Day_1",
             "request": "launch",
             "mainClass": "collection_framework.Day_1",
