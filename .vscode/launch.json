@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Hashmap_1",
+            "request": "launch",
+            "mainClass": "collection_framework.Hashmap_1",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "CopyonwriteArray",
+            "request": "launch",
+            "mainClass": "collection_framework.CopyonwriteArray",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "Stack_1",
+            "request": "launch",
+            "mainClass": "collection_framework.Stack_1",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "Vector_demo",
             "request": "launch",
             "mainClass": "collection_framework.Vector_demo",
