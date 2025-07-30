@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LRUCache",
+            "request": "launch",
+            "mainClass": "collection_framework.LRUCache",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "linkedHashMapDemo",
+            "request": "launch",
+            "mainClass": "collection_framework.linkedHashMapDemo",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "Hashmap_1",
             "request": "launch",
             "mainClass": "collection_framework.Hashmap_1",
