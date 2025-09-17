@@ -7,6 +7,8 @@ public class Demo{
         // task 1: Print your age
         // int age = 21; // Declare an integer variable
         // System.out.println("My age is " + age); // Print age to the console
+        // int age = 21;
+        // System.out.println("My age is : " + age);
 
         // task 2: Calculate area and circumference of a circle
         // Scanner sc = new Scanner(System.in); // Create Scanner for input
