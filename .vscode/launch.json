@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "lec2",
+            "request": "launch",
+            "mainClass": "lec2",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "Lec1",
             "request": "launch",
             "mainClass": "Lec1",
