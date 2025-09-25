@@ -32,8 +32,11 @@ public class lec2 {
         //     System.out.println("Marks are: "+ marks[i]);
         // }
 
-        int arr[] = {1,2,3,4,5}; // Another way to declare and initialize an array
+        // int arr[] = {1,2,3,4,5}; // Another way to declare and initialize an array
 
-        sum(arr);        
+        // sum(arr);
+
+        //what  is constructor in java: A constructor is a special method that is called when an object is instantiated. It is used to initialize the object's properties.
+        // lec2 obj = new lec2();
         }
 }
