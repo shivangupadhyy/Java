@@ -2,8 +2,54 @@ import java.util.*;
 
 public class Demo{
 
+    static class Car {
+        String model ;
+        String company;
+        int price ;
+
+        public void setModel(String model){
+            this.model = model;
+            System.out.println("Model of the car is : " + model);
+        }
+
+        public void setCompany(String company){
+            this.company = company;
+            System.out.println("Company of the car is : " + company);
+        }
+        public void setPrice(int price){
+            this.price = price;
+            System.out.println("Price of the car is : " + price);
+        }
+    }
+
     public static void main(String args []){
 
+        // Scanner sc = new Scanner(System.in);
+        // String model;
+        // String company;
+        // int price;
+        // System.out.println("Enter the model of the car : ");
+        // model = sc.nextLine();
+        // Car car1 = new Car();
+        // car1.setModel(model);
+
+        // System.out.println("Enter the company of the car : ");
+        // company = sc.nextLine();
+        // car1.setCompany(company);
+
+        // System.out.println("Enter the price of the car : ");
+        // price = sc.nextInt();
+        // car1.setPrice(price);
+        // sc.close();
+
+
+       int[] numbers = {10, 20, 30, 40, 50};
+
+        int sum = 0;
+        for(int i =0; i<numbers.length; i++){
+            sum += numbers[i];
+        }
+        System.out.println("Sum of array elements is: " + sum);
         // task 1: Print your age
         // int age = 21; // Declare an integer variable
         // System.out.println("My age is " + age); // Print age to the console
