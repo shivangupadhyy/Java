@@ -22,7 +22,7 @@ public class custom {
     public static void main(String[] args) {
 
         try {
-            checkNumber(-5);      
+            checkNumber(5);      
         }
         catch (NegativeNumberException e) {
             System.out.println("Exception Caught: " + e.getMessage());
