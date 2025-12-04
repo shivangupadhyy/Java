@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "custom",
+            "request": "launch",
+            "mainClass": "custom",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "CopyFile",
+            "request": "launch",
+            "mainClass": "CopyFile",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "lec6",
+            "request": "launch",
+            "mainClass": "lec6",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "SumBill",
+            "request": "launch",
+            "mainClass": "SumBill",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
+            "name": "findMax$SumBill",
+            "request": "launch",
+            "mainClass": "findMax$SumBill",
+            "projectName": "Java_a7c07b7c"
+        },
+        {
+            "type": "java",
             "name": "CharacterChecker",
             "request": "launch",
             "mainClass": "CharacterChecker",
