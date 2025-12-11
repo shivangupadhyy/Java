@@ -36,7 +36,7 @@ public class loops {
         // System.out.println(j);
         // j++;
         // } while (j < 11 );
-        Scanner sc = new Scanner(System.in);
+        // Scanner sc = new Scanner(System.in);
         // int n = sc.nextInt();
 
         // int sum = 0;
@@ -53,6 +53,20 @@ public class loops {
         // for (int i = 1; i < 11; i++) {
         //     System.out.println("Multiplication of" + n + "*" + i + "=" + +n * i);
         // }
+
+        for(int i = 1; i<=4; i++){
+            for(int j =1; j<=3; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        for(int i = 1; i<=4; i++){
+            for(int j =1; j<=i; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
 
         
     }
